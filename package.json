@@ -1,5 +1,5 @@
 {
-  "name": "armancurr-clean",
+  "name": "armancurr-dos",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.13.5"
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.5",
+    "phosphor-icons-astro": "2.1.1-17042025",
+    "tailwindcss": "^4.1.12"
   }
 }
