@@ -1,11 +1,7 @@
 ---
 import "../global.css";
 import { 
-  PhGithubLogo,
-  PhTwitterLogo,
-  PhLinkedinLogo,
-  PhEnvelopeSimpleOpen,
-  PhArrowUpRight
+  PhArrowUpRight,
 } from 'phosphor-icons-astro';
 ---
 
@@ -19,7 +15,7 @@ import {
 		<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans&display=swap" rel="stylesheet">
   </head>
 	<body class="bg-[#191724] min-h-screen flex flex-col items-center justify-center p-8">
-      <div class="flex flex-col max-w-2xl w-full gap-8">
+      <div class="flex flex-col max-w-2xl w-full gap-12">
         <!-- intro -->
         <section>
           <h1 class="text-[#e0def4] text-2xl font-medium mb-2">
@@ -30,21 +26,6 @@ import {
           <p class="text-[#e0def4] text-lg">
             i like to build software that feels good to use, makes your life easier, and always on the lookout to contribute to open source ones.
           </p>
-        </section>
-
-        <!-- socials -->
-        <section class="flex flex-row items-center justify-start gap-4 text-md text-[#6e6a86]">
-          find me here:
-          <div class="hover:scale-110 transition-transform duration-300">
-            <a href="https://github.com/armancurr" target="_blank">
-              <PhGithubLogo size={18} weight="fill"/>
-            </a>
-          </div>
-          <div class="hover:scale-110 transition-transform duration-300">
-            <a href="https://x.com/rrucnamra" target="_blank">
-              <PhTwitterLogo size={18} weight="fill"/>
-            </a>
-          </div>
         </section>
 
         <!-- what im working on? -->
@@ -63,7 +44,7 @@ import {
               </p>
             </div>
             <a href="https://github.com/armancurr/pazman.git" target="_blank">
-              <PhArrowUpRight size={20} class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
             </a>
           </div>
 
@@ -80,7 +61,7 @@ import {
               </p>
             </div>
             <a href="https://github.com/armancurr/openmerge.git" target="_blank">
-              <PhArrowUpRight size={20} class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
             </a>
           </div>
         </section>
@@ -101,7 +82,7 @@ import {
               </p>
             </div>
             <a href="https://github.com/armancurr/vizum.git" target="_blank">
-              <PhArrowUpRight size={20} class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
             </a>
           </div>
 
@@ -118,9 +99,21 @@ import {
               </p>
             </div>
             <a href="https://github.com/armancurr/coinsavor.git" target="_blank">
-              <PhArrowUpRight size={20} class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
             </a>
           </div>
         </section>
+
+                <!-- socials -->
+                <section class="flex flex-row items-start justify-start gap-4 text-md text-[#6e6a86]">
+                    <a href="https://github.com/armancurr" target="_blank" class="flex items-center gap-2 hover:text-[#c4a7e7] transition-colors duration-200">
+                      <PhArrowUpRight size={18} weight="bold"/>
+                      follow me on twitter
+                    </a>
+                    <a href="https://x.com/rrucnamra" target="_blank" class="flex items-center gap-2 hover:text-[#c4a7e7] transition-colors duration-200">
+                      <PhArrowUpRight size={18} weight="bold"/>
+                      collaborate on github
+                    </a>
+                </section>
   </body>
 </html>
