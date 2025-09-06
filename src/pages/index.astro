@@ -1,6 +1,7 @@
 ---
 import "../global.css";
-import { 
+// import Header from "../components/header.astro";
+import {
   PhArrowUpRight,
 } from 'phosphor-icons-astro';
 ---
@@ -11,11 +12,12 @@ import {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>armancurr</title>
+		<title>armancurr - personal website</title>
 		<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans&display=swap" rel="stylesheet">
   </head>
 	<body class="bg-[#191724] min-h-screen flex flex-col items-center justify-center p-8">
       <div class="flex flex-col max-w-2xl w-full gap-12">
+        
         <!-- intro -->
         <section>
           <h1 class="text-[#e0def4] text-2xl font-medium mb-2">
@@ -32,88 +34,86 @@ import {
         <section class="flex flex-col gap-4">
           <label class="text-[#6e6a86] text-sm">what im working on?</label>
           <!-- 1 -->
-          <div class="flex items-center justify-between">
-            <div>
-              <a href="https://github.com/armancurr/pazman.git" target="_blank">
-                <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium mb-1 transition-colors duration-200">
-                  pazman
-                </h2>
-              </a>
+          <>
+              <div class="flex items-center justify-between">
+                <a href="https://github.com/armancurr/pazman.git" target="_blank">
+                  <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium transition-colors duration-200">
+                    pazman
+                  </h2>
+                </a>
+                <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              </div>
               <p class="text-[#6e6a86] text-md">
                 quickly fetch your passwords in your terminal
               </p>
-            </div>
-            <a href="https://github.com/armancurr/pazman.git" target="_blank">
-              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
-            </a>
-          </div>
+          </>
 
           <!-- 2 -->
-          <div class="flex items-center justify-between">
+          <>
             <div>
-              <a href="https://github.com/armancurr/openmerge.git" target="_blank">
-                <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium mb-1 transition-colors duration-200">
-                  openmerge
-                </h2>
-              </a>
+              <div class="flex items-center justify-between">
+                <a href="https://github.com/armancurr/openmerge.git" target="_blank">
+                  <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium transition-colors duration-200">
+                    openmerge
+                  </h2>
+                </a>
+                <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              </div>
               <p class="text-[#6e6a86] text-md">
                 automate your pull requests while never leaving the terminal
               </p>
             </div>
-            <a href="https://github.com/armancurr/openmerge.git" target="_blank">
-              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
-            </a>
-          </div>
+          </>
         </section>
 
         <!-- things i have built -->
         <section class="flex flex-col gap-4">
           <label class="text-[#6e6a86] text-sm">things i have built</label>
           <!-- 1 -->
-          <div class="flex items-center justify-between">
+          <>
             <div>
-              <a href="https://github.com/armancurr/vizum.git" target="_blank">
-                <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium mb-1 transition-colors duration-200">
-                  vizum
-                </h2>
-              </a>
+              <div class="flex items-center justify-between">
+                <a href="https://github.com/armancurr/vizum.git" target="_blank">
+                  <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium transition-colors duration-200">
+                    vizum
+                  </h2>
+                </a>
+                <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              </div>
               <p class="text-[#6e6a86] text-md">
                 image utility tool to compress, convert, and resize images
               </p>
             </div>
-            <a href="https://github.com/armancurr/vizum.git" target="_blank">
-              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
-            </a>
-          </div>
+          </>
 
           <!-- 2 -->
-          <div class="flex items-center justify-between">
+          <>
             <div>
-              <a href="https://github.com/armancurr/coinsavor.git" target="_blank">
-                <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium mb-1 transition-colors duration-200">
-                  coinsavor
-                </h2>
-              </a>
+              <div class="flex items-center justify-between">
+                <a href="https://github.com/armancurr/coinsavor.git" target="_blank">
+                  <h2 class="text-[#e0def4] hover:text-[#c4a7e7] text-lg font-medium transition-colors duration-200">
+                    coinsavor
+                  </h2>
+                </a>
+                <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
+              </div>
               <p class="text-[#6e6a86] text-md">
                 it helps you save money by giving you meal plans that you should not ignore
               </p>
             </div>
-            <a href="https://github.com/armancurr/coinsavor.git" target="_blank">
-              <PhArrowUpRight size={18} weight="bold" class="text-[#e0def4] hover:text-[#c4a7e7]"/>
-            </a>
-          </div>
+          </>
         </section>
-
-                <!-- socials -->
-                <section class="flex flex-row items-start justify-start gap-4 text-md text-[#6e6a86]">
-                    <a href="https://github.com/armancurr" target="_blank" class="flex items-center gap-2 hover:text-[#c4a7e7] transition-colors duration-200">
-                      <PhArrowUpRight size={18} weight="bold"/>
-                      follow me on twitter
-                    </a>
-                    <a href="https://x.com/rrucnamra" target="_blank" class="flex items-center gap-2 hover:text-[#c4a7e7] transition-colors duration-200">
-                      <PhArrowUpRight size={18} weight="bold"/>
-                      collaborate on github
-                    </a>
-                </section>
+        
+        <!-- socials -->
+        <section class="flex flex-row items-start justify-start gap-4 text-md text-[#6e6a86]">
+          <a href="https://github.com/armancurr" target="_blank" class="flex items-center gap-2 hover:text-[#c4a7e7] transition-colors duration-200">
+            <PhArrowUpRight size={18} weight="bold"/>
+            follow me on twitter
+          </a>
+          <a href="https://x.com/rrucnamra" target="_blank" class="flex items-center gap-2 hover:text-[#c4a7e7] transition-colors duration-200">
+            <PhArrowUpRight size={18} weight="bold"/>
+            collaborate on github
+          </a>
+      </section>
   </body>
 </html>
